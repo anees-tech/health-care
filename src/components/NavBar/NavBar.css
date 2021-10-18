@@ -1,3 +1,30 @@
-.logo_img{
+/* .logo_img{
     width: 220px;
+} */
+
+.login,
+.register{
+    background-color: white;
+    border-radius: 20px;
+
 }
+.login{
+    margin-right: 10px;
+
+}
+.user_display_name{
+    color: chartreuse;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+/* ============================= */
+
+.form_container{
+    padding-top: 100px;
+}
+/* .form_wrapper{
+    padding-top: 70px;
+    padding-bottom: 50px;
+} */

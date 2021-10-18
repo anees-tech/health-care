@@ -1,6 +1,15 @@
 /* .App {
 
 } */
+.bottom_underline::after{
+  content: "";
+  width: 200px;
+  height: 3px;
+  background-color: black;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+}
 
 .App-logo {
   height: 40vmin;

@@ -1,9 +1,13 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 // import logo from '../../images/logo-medicalife.png'
+import { HashLink } from 'react-router-hash-link';
+import useAuth from "../hooks/useAuth";
 import './NavBar.css';
 
 const NavBar = () => {
+    const { user, logOut } = useAuth();
+    console.log('nav->',user);
     return (
         <>
             <Navbar collapseOnSelect expand="lg" sticky="top" bg="dark" variant="dark">
@@ -11,10 +15,20 @@ const NavBar = () => {
                     <Navbar.Brand href="#home">Medical Life</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#features">Services</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
-                        <Nav.Link href="#login">LogIn</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#features">Services</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#pricing">Pricing</Nav.Link>
+                        {user?.email ?
+                            <>
+                                <p className="user_display_name">{user.displayName} -</p>
+                                <Nav.Link onClick={logOut} as={HashLink} to="/logIn" className="login">LogOut</Nav.Link>
+                            </>
+                            :
+                            <>
+                                <Nav.Link as={HashLink} to="/logIn" className="login">LogIn</Nav.Link>
+                                <Nav.Link as={HashLink} to="/register" className="register">Register</Nav.Link>
+                            </>
+                        }
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

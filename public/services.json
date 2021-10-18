@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "s_img": "./images/service-title/1.png",
+        "s_d_img": "./images/service-detail/service-1.jpg",
+        "s_title": "title",
+        "s_text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam..."
+    },
+    {
+        "id": "2",
+        "s_img": "./images/service-title/1.png",
+        "s_d_img": "./images/service-detail/service-2.jpg",
+        "s_title": "title",
+        "s_text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam..."
+    },
+    {
+        "id": "3",
+        "s_img": "./images/service-title/1.png",
+        "s_d_img": "./images/service-detail/service-3.jpg",
+        "s_title": "title",
+        "s_text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam..."
+    },
+    {
+        "id": "4",
+        "s_img": "./images/service-title/1.png",
+        "s_d_img": "./images/service-detail/service-4.jpg",
+        "s_title": "title",
+        "s_text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam..."
+    },
+    {
+        "id": "5",
+        "s_img": "./images/service-title/1.png",
+        "s_d_img": "./images/service-detail/service-5.jpg",
+        "s_title": "title",
+        "s_text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam..."
+    },
+    {
+        "id": "6",
+        "s_img": "./images/service-title/1.png",
+        "s_d_img": "./images/service-detail/service-6.jpg",
+        "s_title": "title",
+        "s_text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam..."
+    }
+]
