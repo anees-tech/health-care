@@ -1,0 +1,27 @@
+.slider_img_1,
+.slider_img_2,
+.slider_img_3 {
+    height: 650px;
+}
+.slider_text {
+    color: black;
+    float: left;
+    text-align: left;
+    background-color: #ffffffa6;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 688px) {
+    .slider_img_1,
+    .slider_img_2,
+    .slider_img_3 {
+        height: 300px;
+    }
+}
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+    .slider_img_1,
+    .slider_img_2,
+    .slider_img_3 {
+        height: 450px;
+    }
+}
