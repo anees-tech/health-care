@@ -7,7 +7,6 @@ import './NavBar.css';
 
 const NavBar = () => {
     const { user, logOut } = useAuth();
-    console.log('nav->',user);
     return (
         <>
             <Navbar collapseOnSelect expand="lg" sticky="top" bg="dark" variant="dark">
@@ -16,7 +15,7 @@ const NavBar = () => {
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
-                        <Nav.Link as={HashLink} to="/home#features">Services</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#pricing">Pricing</Nav.Link>
                         {user?.email ?
                             <>

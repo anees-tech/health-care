@@ -5,6 +5,7 @@ import Login from './components/Login/Login';
 import NavBar from './components/NavBar/NavBar';
 import NotFound from './components/NotFound/NotFound';
 import Register from './components/Register/Register';
+import ServiceDetails from './components/Services/ServiceDetails';
 import AuthProvider from './Context/AuthProvider';
 
 function App() {
@@ -27,6 +28,9 @@ function App() {
             </Route>
             <Route path="/register">
               <Register></Register>
+            </Route>
+            <Route path="/services/:serviceId">
+              <ServiceDetails></ServiceDetails>
             </Route>
 
 

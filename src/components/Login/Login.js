@@ -19,7 +19,7 @@ const Login = () => {
                                 <input type="password" className="form-control" id="floatingPassword" placeholder="Password"/>
                                 <label for="floatingPassword">Password</label>
                             </div>
-                            <div class="register_footer d-flex">
+                            <div className="register_footer d-flex">
                                 <p>Create a New Account</p>
                                 <Link to="/register">Go to Register</Link>
                             </div>

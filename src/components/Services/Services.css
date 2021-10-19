@@ -1,0 +1,7 @@
+.service_img{
+    width: 110px !important;
+    padding: 20px;
+}
+.card_body> a{
+    color: #00E5CC;
+}
