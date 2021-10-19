@@ -17,6 +17,7 @@ const NavBar = () => {
                         <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
                         <Nav.Link as={HashLink} to="/aboutUs">AboutUs</Nav.Link>
+                        <Nav.Link as={HashLink} to="/contact">Contact</Nav.Link>
                         {user?.email ?
                             <>
                                 <p className="user_display_name">{user.displayName || user.email} -</p>
