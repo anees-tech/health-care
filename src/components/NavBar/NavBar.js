@@ -16,7 +16,7 @@ const NavBar = () => {
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
-                        <Nav.Link as={HashLink} to="/home#pricing">Pricing</Nav.Link>
+                        <Nav.Link as={HashLink} to="/aboutUs">AboutUs</Nav.Link>
                         {user?.email ?
                             <>
                                 <p className="user_display_name">{user.displayName || user.email} -</p>
