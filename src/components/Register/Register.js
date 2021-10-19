@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 
 const Register = () => {
-    const { googleSignIn, emailAndPasswordSignIn, error } = useAuth();
+    const { googleSignIn, emailAndPasswordSignUp, error, updateUserName} = useAuth();
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -14,7 +14,7 @@ const Register = () => {
             setName(e.target.value);
         }
     
-        const handleEmail = (e) => {
+        const handleEmail = e => {
             setEmail(e.target.value);
         };
     
@@ -29,7 +29,9 @@ const Register = () => {
             setUserError('Password should be at least 6 characters')
             return;
         }
-        emailAndPasswordSignIn(email, password);
+        emailAndPasswordSignUp(email, password);
+        updateUserName(name);
+        setUserError("");
     }
 
     return (
@@ -40,7 +42,7 @@ const Register = () => {
                         <h2>Register</h2>
                         <form onSubmit={handleRagistration}>
                             <div className="form-floating mb-3 mt-4">
-                                <input onBlur={handleName} type="text" className="form-control" id="floatingInput" placeholder=" "/>
+                                <input onBlur={handleName} type="text" className="form-control" id="floatingInput" required placeholder=" "/>
                                 <label htmlFor="floatingInput">Full Name</label>
                             </div>
                             <div className="form-floating mb-3">

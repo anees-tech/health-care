@@ -1,0 +1,95 @@
+.footer{
+    background-color: #1f2833;
+    color: white;
+    margin-bottom: 0px;
+    padding: 50px 0px;
+    
+
+}
+/* .footer-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 80px;
+} */
+
+
+
+/* footer about us */
+/* ================================================= */
+.footer-aboutUs{
+    
+}
+.footer-aboutUs .address{
+    /* font-size: 18px; */
+}
+.footer-aboutUs .address p{
+    font-size: 18px;
+}
+.footer-aboutUs .address p i{
+    margin-right: 10px;
+    transition: .3s;
+}
+.footer-aboutUs .address p i:hover{
+    color: #2196F5;
+}
+.footer-aboutUs> p{
+    font-size: 18px;
+}
+.footer-aboutUs .title{
+    font-size: 22px;
+    font-weight: 700;
+}
+.footer-aboutUs .title::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #2196F5;
+    display: block;
+    margin-top: 3px;
+}
+
+
+
+/* footer nav */
+/* ================================================= */
+.footer-nav{
+    
+}
+.footer-nav .title{
+    font-size: 22px;
+    font-weight: 700;
+}
+.footer-nav .link{
+    margin-left: 30px;
+    font-size: 18px;
+}
+.footer-nav .title::after{
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #2196F5;
+    display: block;
+    margin-top: 3px;
+}
+
+
+
+/* footer social */
+/* ================================================= */
+.footer-socila{
+    
+}
+.footer-socila .title{
+    font-size: 22px;
+    font-weight: 700;
+}
+.footer-socila .title::after{
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #2196F5;
+    display: block;
+    margin-top: 3px;
+}
+/* .footer-socila{
+} */

@@ -11,7 +11,7 @@ const NavBar = () => {
         <>
             <Navbar collapseOnSelect expand="lg" sticky="top" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">Medical Life</Navbar.Brand>
+                    <Navbar.Brand as={HashLink} to="/home">Medical Life</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
@@ -19,7 +19,7 @@ const NavBar = () => {
                         <Nav.Link as={HashLink} to="/home#pricing">Pricing</Nav.Link>
                         {user?.email ?
                             <>
-                                <p className="user_display_name">{user.displayName} -</p>
+                                <p className="user_display_name">{user.displayName || user.email} -</p>
                                 <Nav.Link onClick={logOut} as={HashLink} to="/logIn" className="login">LogOut</Nav.Link>
                             </>
                             :
