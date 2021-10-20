@@ -16,7 +16,7 @@ const Service = ({ user }) => {
                         <Card.Text>
                             {s_text}
                         </Card.Text>
-                        <Link to={`/services/${id}`}>Read More <i className="fas fa-long-arrow-alt-right"></i></Link>
+                        <Link className="readmore_btn" to={`/services/${id}`}>Read More <i className="fas fa-long-arrow-alt-right"></i></Link>
                     </Card.Body>
                 </Card>
             </Col>
