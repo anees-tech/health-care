@@ -1,6 +1,6 @@
 import React from "react";
-import { Card, Col, Row } from "react-bootstrap";
-import { Link, useParams } from "react-router-dom";
+import { Card, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import './Services.css';
 
 const Service = ({ user }) => {

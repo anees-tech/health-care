@@ -1,19 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
-import useServices from "../hooks/useServices";
 import topImg from "../../images/medserv.jpg";
+import { Link } from "react-router-dom";
 
-// import img1 from "../../images/service-detail/service-1.jpg";
-// import img2 from "../../images/service-detail/service-2.jpg";
-// import img3 from "../../images/service-detail/service-3.jpg";
-// import img4 from "../../images/service-detail/service-4.jpg";
-// import img5 from "../../images/service-detail/service-5.jpg";
-// import img6 from "../../images/service-detail/service-6.jpg";
 
 const ServiceDetails = () => {
     const { serviceId } = useParams();
-    // const [services] = useServices();
-    // console.log("sr--", services);
 
     return (
         <div className="container">
@@ -70,6 +62,9 @@ const ServiceDetails = () => {
                     ne exploits promptes pu remparts ca ma. Heros ornee robes tu
                     me. Les dut ces brique grande ete semble.
                 </p>
+            </div>
+            <div className="text-center">
+            <Link to="/home"><i className="fas fa-long-arrow-alt-left me-1"></i>Go Back</Link>
             </div>
         </div>
     );

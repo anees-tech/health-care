@@ -18,12 +18,6 @@ const useFirebase = () => {
         return signInWithPopup(auth, googleProvider)
         .finally(() => setIsLoading(false));
     }
-    // .then((result) => {
-    //     setUser(result.user);
-    // }).catch(error => {
-    //     console.log("googleSignIn-->", error.message);
-
-    // })
 
     // logOut process
     const logOut = () => {
