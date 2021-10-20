@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from "../hooks/useAuth";
 
 const Login = () => {
@@ -7,6 +7,8 @@ const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [userError, setUserError] = useState("");
+    const location = useLocation();
+    const history = useHistory()
 
     // get users input fild value
         const handleEmail = (e) => {
@@ -27,6 +29,18 @@ const Login = () => {
         emailAndPasswordLogIn(email, password)
         setUserError("")
     }
+        // rediract location manage
+    const handleGoogleSignIn = () => {
+        googleSignIn()
+        .then(() => {
+            history.push(location.state?.from || '/home')
+
+        }).catch((error) => {
+            console.log(error.message)
+
+        });
+    }
+
 
     return (
         <div className="container form_container">
@@ -54,7 +68,7 @@ const Login = () => {
                     </div>
                     <hr />
                     <div className="d-flex">
-                        <button onClick={googleSignIn} className="btn btn-primary text-start">Google SignIn</button>
+                        <button onClick={handleGoogleSignIn} className="btn btn-primary text-start">Google SignIn</button>
                     </div>
                 </div>
             </div>
