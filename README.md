@@ -1,6 +1,6 @@
 # Helth Care
 
-### This is my live website, please visite [Go to Live website ->](https://gifted-wing-416017.netlify.app/).
+### This is my live website, please visite [Go to Live website](https://gifted-wing-416017.netlify.app/).
 
 ## This website top 5 Positivity
 
