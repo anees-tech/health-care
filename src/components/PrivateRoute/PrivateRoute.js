@@ -24,7 +24,8 @@ const PrivateRoute = ({ children, ...rest }) => {
                             pathname: "/logIn",
                             state: { from: location },
                         }}
-                    ></Redirect>
+                    ></Redirect>  
+                    // there is an error
                 )
             }
         ></Route>
